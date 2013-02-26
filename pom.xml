@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>nz.org.geonet</groupId>
     <artifactId>mule-jolokia</artifactId>
     <packaging>mule</packaging>
     <name>Mule Jolokia Application</name>
-    <version>1.0.0-SNAPSHOT</version>
-    <description></description>
+    <version>1.0.0</version>
+    <description />
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -123,8 +121,7 @@
                         </goals>
                         <configuration>
                             <tasks>
-                                <copy file="${project.build.directory}/${project.build.finalName}.zip"
-                                    todir="${env.MULE_HOME}/apps" overwrite="true"/>
+                                <copy file="${project.build.directory}/${project.build.finalName}.zip" todir="${env.MULE_HOME}/apps" overwrite="true" />
                             </tasks>
                         </configuration>
                     </execution>
